@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern personal portfolio website." />
+  <title>Ramuditha | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome (only added if not present) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="background-orb orb-one" aria-hidden="true"></div>
+  <div class="background-orb orb-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <!-- EDIT: Change logo/name here -->
+      <a class="brand" href="#home" aria-label="Go to home">Amira Ramudtha<span>#</span></a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <!-- EDIT: Change your name -->
+          <h1>amira Ramuditha</h1>
+          <!-- EDIT: Change roles in script.js -->
+          <h2><span id="typingText">Full Stack Developer</span><span class="typing-cursor">|</span></h2>
+          <p class="hero-description">
+            I create beautiful, functional, and user-focused digital products with modern technologies, clean code, and thoughtful problem solving.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              <span class="button-icon" aria-hidden="true">⌘</span> View Projects
+            </a>
+            <a class="button button-dark" href="#contact">
+              <span class="button-icon" aria-hidden="true">✦</span> Contact Me
+            </a>
+            <a class="button button-outline" href="#certifications">
+              <span class="button-icon" aria-hidden="true">✓</span> Certifications
+            </a>
+          </div>
+
+          <div class="social-row" aria-label="Social links">
+            <!-- EDIT: Replace # with your links -->
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1" aria-label="Profile visual">
+          <div class="geo-scene">
+            <div class="geo-square square-a"></div>
+            <div class="geo-square square-b"></div>
+            <div class="geo-square square-c"></div>
+            <div class="profile-ring">
+              <!-- EDIT: Replace assets/profile.svg with your profile image -->
+              <img src="assets/profile.png" alt="Your profile" />
+            </div>
+            <div class="floating-dot dot-a"></div>
+            <div class="floating-dot dot-b"></div>
+            <div class="floating-dot dot-c"></div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">WHO I AM</p>
+          <h2>About <span>Me</span></h2>
+          <p>Learn more about my background, skills, and professional journey.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <h3>Turning Ideas Into <span>Digital Reality</span></h3>
+            <!-- EDIT: Replace this paragraph with your personal summary -->
+            <p>
+              I am a motivated software developer with a strong interest in building reliable web applications and engaging digital experiences. My work combines thoughtful design, clean development practices, and a practical understanding of real business needs.
+            </p>
+            <p>
+              I enjoy learning new technologies, collaborating with teams, and transforming complex requirements into simple, useful products. I am always open to meaningful projects that create real value.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <strong>1+</strong>
+                <span>Years Experience</span>
+              </div>
+              <div class="highlight-card">
+                <strong>7+</strong>
+                <span>Completed Projects</span>
+              </div>
+              <div class="highlight-card">
+                <strong>5+</strong>
+                <span>Certifications</span>
+              </div>
+            </div>
+
+            <!-- EDIT: Add your real CV file at assets/cv.pdf -->
+            <a class="button button-primary" href="assets/cv.pdf" download>Download CV</a>
+          </div>
+
+          <div class="about-art reveal reveal-delay-1">
+            <div class="about-image-wrap">
+              <img src="assets/about.jpg" alt="Developer workspace illustration" />
+              <div class="about-badge">Available for work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">WHAT I USE</p>
+          <h2>My <span>Skills</span></h2>
+          <p>A comprehensive overview of my technical expertise and professional abilities.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Frontend Development</h3>
+            <p>Responsive and accessible user interfaces with modern styling and interactions.</p>
+            <div class="tag-list">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Bootstrap</span><span>Tailwind</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon">{ }</div>
+            <h3>Backend Development</h3>
+            <p>Secure APIs, application logic, database integrations, and server-side systems.</p>
+            <div class="tag-list">
+              <span>Node.js</span><span>Laravel</span><span>PHP</span><span>Java</span><span>REST API</span><span>Python</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">DB</div>
+            <h3>Database & Cloud</h3>
+            <p>Reliable data models, cloud deployment, authentication, and storage solutions.</p>
+            <div class="tag-list">
+              <span>MySQL</span><span>MongoDB</span><span>Firebase</span><span>AWS</span><span>GitHub</span><span>Vercel</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon">UX</div>
+            <h3>Tools & Professional Skills</h3>
+            <p>Strong collaboration, documentation, debugging, planning, and product thinking.</p>
+            <div class="tag-list">
+              <span>Figma</span><span>Git</span><span>Agile</span><span>Problem Solving</span><span>UI/UX</span><span>Communication</span>
+            </div>
+          </article>
+
+        
+
+        
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+            <h3>Mobile App Development</h3>
+            <p>Professional development of applications for iOS and Android.</p>
+            <div class="tag-list">
+              <span>iOS</span><span>Android</span><span>React Native</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+            <h3>Database Management</h3>
+            <p>Managing high-quality databases for modern applications.</p>
+            <div class="tag-list">
+              <span>MongoDB</span><span>MySQL</span><span>Postgres</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-code-branch" aria-hidden="true"></i></div>
+            <h3>Version Control</h3>
+            <p>Using Git and GitHub for efficient version control in projects.</p>
+            <div class="tag-list">
+              <span>Git</span><span>GitHub</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3>MERN Stack Development</h3>
+            <p>Full-stack development using MongoDB, Express.js, React.js and Node.js.</p>
+            <div class="tag-list">
+              <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MY JOURNEY</p>
+          <h2>Work <span>Experience</span></h2>
+          <p>Professional roles, responsibilities, and achievements.</p>
+        </div>
+
+        
+
+  
+
+          <article class="timeline-item timeline-left reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Jan 2023 – May 2023</span>
+              <h3>Software Engineering Intern</h3>
+              <h4>Technology Company</h4>
+              <p>Supported feature development, testing, documentation, bug fixing, and code reviews within an agile engineering team.</p>
+              <div class="tag-list compact"><span>Git</span><span>REST API</span><span>Agile</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ACADEMIC BACKGROUND</p>
+          <h2>My <span>Education</span></h2>
+          <p>Qualifications and learning experiences that shaped my career.</p>
+        </div>
+
+        
+
+          <article class="education-card reveal reveal-delay-1">
+            <img src="assets/education-2.jpg" alt="Institute placeholder" />
+            <div class="education-card-body">
+              <span class="education-year">2024 – 2026</span>
+              <h3>Diploma in Information Technology</h3>
+              <h4>Your Institute Name</h4>
+              <p>Completed practical modules in programming, networking, office systems, and application development.</p>
+            </div>
+          </article>
+
+          <article class="education-card reveal reveal-delay-2">
+            <img src="assets/education-3.jpg" alt="School placeholder" />
+            <div class="education-card-body">
+              <span class="education-year">2023</span>
+              <h3>G.C.E. Advanced Level</h3>
+              <h4>Your School Name</h4>
+              <p>Completed secondary education with a strong interest in technology, mathematics, and digital creativity.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Featured <span>Projects</span></h2>
+          <p>A selection of products and systems designed around real user needs.</p>
+        </div>
+
+        <div class="project-filters reveal" role="group" aria-label="Project filters">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="web">Web</button>
+          <button class="filter-button" data-filter="app">Applications</button>
+          <button class="filter-button" data-filter="ui">UI/UX</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-image">
+              <img src="assets/project-1.svg" alt="E-commerce project" />
+              <div class="project-overlay">
+                <button class="icon-button open-project" data-project="ecommerce" aria-label="View project details">↗</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-featured shopping experience with product management, cart, checkout, and admin tools.</p>
+              <div class="tag-list compact"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1" data-category="app">
+            <div class="project-image">
+              <img src="assets/project-2.svg" alt="Hospital system project" />
+              <div class="project-overlay">
+                <button class="icon-button open-project" data-project="hospital" aria-label="View project details">↗</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Hospital Management System</h3>
+              <p>Patient, appointment, doctor, payment, and reporting workflows in one secure platform.</p>
+              <div class="tag-list compact"><span>Laravel</span><span>MySQL</span><span>Bootstrap</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2" data-category="ui">
+            <div class="project-image">
+              <img src="assets/project-3.svg" alt="Agency website project" />
+              <div class="project-overlay">
+                <button class="icon-button open-project" data-project="agency" aria-label="View project details">↗</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Creative Agency Website</h3>
+              <p>A modern company website with premium visuals, smooth animations, and conversion-focused content.</p>
+              <div class="tag-list compact"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="app">
+            <div class="project-image">
+              <img src="assets/project-4.svg" alt="Booking system project" />
+              <div class="project-overlay">
+                <button class="icon-button open-project" data-project="booking" aria-label="View project details">↗</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Appointment Booking App</h3>
+              <p>A scheduling platform with account management, booking status, notifications, and payments.</p>
+              <div class="tag-list compact"><span>MERN</span><span>Firebase</span><span>REST API</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1" data-category="web">
+            <div class="project-image">
+              <img src="assets/project-5.svg" alt="Travel platform project" />
+              <div class="project-overlay">
+                <button class="icon-button open-project" data-project="travel" aria-label="View project details">↗</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Travel Experience Platform</h3>
+              <p>Destination, package, ticket, and reservation management for tourism businesses and travelers.</p>
+              <div class="tag-list compact"><span>Next.js</span><span>Laravel</span><span>MySQL</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2" data-category="ui">
+            <div class="project-image">
+              <img src="assets/project-6.svg" alt="Dashboard project" />
+              <div class="project-overlay">
+                <button class="icon-button open-project" data-project="dashboard" aria-label="View project details">↗</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Business Analytics Dashboard</h3>
+              <p>A clean dashboard interface for KPIs, reporting, operational monitoring, and data exports.</p>
+              <div class="tag-list compact"><span>Figma</span><span>React</span><span>Charts</span></div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CONTINUOUS LEARNING</p>
+          <h2>My <span>Certifications</span></h2>
+          <p>Professional learning completed across software, cloud, design, and business technology.</p>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="cert-logo">AWS</div>
+            <div>
+              <span class="cert-year">2026</span>
+              <h3>AWS Academy Graduate – Cloud Foundations</h3>
+              <p>Amazon Web Services</p>
+            </div>
+            <button class="text-button open-cert" data-cert="aws">View Details →</button>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-1">
+            <div class="cert-logo">G</div>
+            <div>
+              <span class="cert-year">2025</span>
+              <h3>Google UX Design Fundamentals</h3>
+              <p>Google Career Certificates</p>
+            </div>
+            <button class="text-button open-cert" data-cert="google">View Details →</button>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <div class="cert-logo">M</div>
+            <div>
+              <span class="cert-year">2025</span>
+              <h3>Microsoft Azure Fundamentals</h3>
+              <p>Microsoft Learn</p>
+            </div>
+            <button class="text-button open-cert" data-cert="azure">View Details →</button>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-logo">JS</div>
+            <div>
+              <span class="cert-year">2024</span>
+              <h3>JavaScript Algorithms & Data Structures</h3>
+              <p>freeCodeCamp</p>
+            </div>
+            <button class="text-button open-cert" data-cert="javascript">View Details →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">LET'S WORK TOGETHER</p>
+          <h2>Get In <span>Touch</span></h2>
+          <p>Feel free to reach out for collaboration, opportunities, or simply to say hello.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <!-- EDIT: Replace contact details -->
+            <a class="contact-card" href="mailto:yourname@email.com">
+              <span class="contact-icon">✉</span>
+              <span><small>Email</small><strong>amiraramuditha345@email.com</strong></span>
+            </a>
+            <a class="contact-card" href="tel:+94770000000">
+              <span class="contact-icon">☎</span>
+              <span><small>Phone</small><strong>+94 715460771</strong></span>
+            </a>
+            <div class="contact-card">
+              <span class="contact-icon">⌖</span>
+              <span><small>Location</small><strong>Mathara, Sri Lanka</strong></span>
+            </div>
+            <div class="contact-socials">
+              <a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Instagram</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal reveal-delay-1" id="contactForm">
+            <div class="form-row">
+              <label>
+                <span>Full Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email Address</span>
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </label>
+            </div>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="Project inquiry" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Message</button>
+            <p class="form-note" id="formNote">Demo form: edit script.js to connect EmailJS, Formspree, or your backend.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home">Ramuditha<span>#</span></a>
+        <p>Full Stack Developer creating thoughtful, reliable, and modern digital experiences.</p>
+        <div class="social-row">
+          <a href="#">in</a><a href="#">GH</a><a href="#">f</a><a href="#">◎</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <span>Web Development</span><span>UI/UX Design</span><span>Mobile Apps</span><span>Maintenance</span>
+      </div>
+
+      <div>
+        <h3>Subscribe</h3>
+        <p>Receive occasional updates about my work.</p>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> Amira Ramudiha . All rights reserved.</p>
+      <p>Designed with care and clean code.</p>
+    </div>
+  </footer>
+
+  <!-- EDIT: Change number to your WhatsApp number, no + sign -->
+  <a class="whatsapp-button" href="https://wa.me/0715460771" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal aria-label="Close modal">×</button>
+      <div class="modal-header">
+        <span class="modal-kicker">PROJECT DETAILS</span>
+        <h2 id="projectModalTitle">Project Title</h2>
+      </div>
+      <div class="modal-content-grid">
+        <img id="projectModalImage" src="assets/project-1.svg" alt="Project preview" />
+        <div>
+          <h3>Overview</h3>
+          <p id="projectModalDescription"></p>
+          <h3>Technologies Used</h3>
+          <div class="tag-list" id="projectModalTags"></div>
+          <h3>Highlights</h3>
+          <ul id="projectModalHighlights"></ul>
+          <div class="modal-actions">
+            <a class="button button-primary" id="projectLiveLink" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="button button-dark" id="projectCodeLink" href="#" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="certModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="modal-backdrop" data-close-cert></div>
+    <div class="modal-dialog modal-small">
+      <button class="modal-close" data-close-cert aria-label="Close modal">×</button>
+      <div class="modal-header">
+        <span class="modal-kicker">CERTIFICATE DETAILS</span>
+        <h2 id="certModalTitle">Certificate Title</h2>
+      </div>
+      <div class="certificate-detail">
+        <div class="certificate-preview" id="certPreview">CERTIFICATE</div>
+        <div>
+          <h3>Issued By</h3>
+          <p id="certIssuer"></p>
+          <h3>Completed</h3>
+          <p id="certDate"></p>
+          <h3>Skills Validated</h3>
+          <div class="tag-list" id="certSkills"></div>
+          <a class="button button-primary" id="certLink" href="#" target="_blank" rel="noopener">View Credential</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

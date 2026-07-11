@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#120d28"/><stop offset="1" stop-color="#211344"/></linearGradient>
+  <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7e22ce"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
+</defs>
+<rect width="1200" height="750" fill="url(#bg)"/>
+<circle cx="1000" cy="120" r="270" fill="#7e22ce" opacity=".12"/>
+<circle cx="170" cy="680" r="260" fill="#2dd4bf" opacity=".08"/>
+<rect x="130" y="125" width="940" height="500" rx="32" fill="#0b0919" stroke="#7e22ce" stroke-opacity=".35"/>
+<rect x="170" y="175" width="210" height="34" rx="9" fill="url(#a)" opacity=".85"/>
+<rect x="170" y="235" width="510" height="25" rx="8" fill="#fff" opacity=".18"/>
+<rect x="170" y="280" width="420" height="25" rx="8" fill="#fff" opacity=".1"/>
+<rect x="170" y="345" width="280" height="190" rx="18" fill="#7e22ce" opacity=".18"/>
+<rect x="475" y="345" width="250" height="190" rx="18" fill="#2dd4bf" opacity=".12"/>
+<rect x="750" y="345" width="280" height="190" rx="18" fill="#fff" opacity=".06"/>
+<text x="600" y="690" fill="#ffffff" opacity=".92" text-anchor="middle" font-family="Arial" font-size="42" font-weight="700">TRAVEL PLATFORM</text>
+<text x="600" y="726" fill="#c6bddb" text-anchor="middle" font-family="Arial" font-size="21">Project preview</text>
+</svg>
