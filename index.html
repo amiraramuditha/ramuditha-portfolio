@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="styles.css" />
   <!-- Font Awesome (only added if not present) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Devicon for programming language icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
   <div class="page-noise" aria-hidden="true"></div>
@@ -30,7 +32,7 @@
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#projects" class="nav-link">Projects</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#languages" class="nav-link">Languages</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
@@ -46,7 +48,7 @@
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#languages">Languages</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -71,8 +73,8 @@
             <a class="button button-dark" href="#contact">
               <span class="button-icon" aria-hidden="true">✦</span> Contact Me
             </a>
-            <a class="button button-outline" href="#certifications">
-              <span class="button-icon" aria-hidden="true">✓</span> Certifications
+            <a class="button button-outline" href="#languages">
+              <span class="button-icon" aria-hidden="true">✓</span> Languages
             </a>
           </div>
 
@@ -130,13 +132,10 @@
                 <span>Years Experience</span>
               </div>
               <div class="highlight-card">
-                <strong>7+</strong>
+                <strong>5+</strong>
                 <span>Completed Projects</span>
               </div>
-              <div class="highlight-card">
-                <strong>5+</strong>
-                <span>Certifications</span>
-              </div>
+              
             </div>
 
             <!-- EDIT: Add your real CV file at assets/cv.pdf -->
@@ -427,53 +426,123 @@
       </div>
     </section>
 
-    <section class="section" id="certifications">
+    <section class="section" id="languages">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">CONTINUOUS LEARNING</p>
-          <h2>My <span>Certifications</span></h2>
-          <p>Professional learning completed across software, cloud, design, and business technology.</p>
+          <p class="eyebrow">PROGRAMMING FOUNDATION</p>
+          <h2>Programming <span>Languages</span></h2>
+          <p>A practical snapshot of the languages I use and the confidence level I bring to each one.</p>
         </div>
 
-        <div class="cert-grid">
-          <article class="cert-card reveal">
-            <div class="cert-logo">AWS</div>
-            <div>
-              <span class="cert-year">2026</span>
-              <h3>AWS Academy Graduate – Cloud Foundations</h3>
-              <p>Amazon Web Services</p>
+        <div class="languages-grid" data-languages-grid>
+          <article class="language-card reveal" data-language-card data-progress="95" style="--accent-color: #e34f26; --fill-delay: 0ms;">
+            <div class="language-icon"><i class="devicon-html5-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>HTML</h3>
+                <span>95%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
             </div>
-            <button class="text-button open-cert" data-cert="aws">View Details →</button>
           </article>
 
-          <article class="cert-card reveal reveal-delay-1">
-            <div class="cert-logo">G</div>
-            <div>
-              <span class="cert-year">2025</span>
-              <h3>Google UX Design Fundamentals</h3>
-              <p>Google Career Certificates</p>
+          <article class="language-card reveal reveal-delay-1" data-language-card data-progress="85" style="--accent-color: #2965f1; --fill-delay: 90ms;">
+            <div class="language-icon"><i class="devicon-css3-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>CSS</h3>
+                <span>85%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
             </div>
-            <button class="text-button open-cert" data-cert="google">View Details →</button>
           </article>
 
-          <article class="cert-card reveal reveal-delay-2">
-            <div class="cert-logo">M</div>
-            <div>
-              <span class="cert-year">2025</span>
-              <h3>Microsoft Azure Fundamentals</h3>
-              <p>Microsoft Learn</p>
+          <article class="language-card reveal" data-language-card data-progress="70" style="--accent-color: #555555; --fill-delay: 180ms;">
+            <div class="language-icon"><i class="devicon-c-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>C</h3>
+                <span>70%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
             </div>
-            <button class="text-button open-cert" data-cert="azure">View Details →</button>
           </article>
 
-          <article class="cert-card reveal">
-            <div class="cert-logo">JS</div>
-            <div>
-              <span class="cert-year">2024</span>
-              <h3>JavaScript Algorithms & Data Structures</h3>
-              <p>freeCodeCamp</p>
+          <article class="language-card reveal reveal-delay-1" data-language-card data-progress="80" style="--accent-color: #f89820; --fill-delay: 270ms;">
+            <div class="language-icon"><i class="devicon-java-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>Java</h3>
+                <span>80%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
             </div>
-            <button class="text-button open-cert" data-cert="javascript">View Details →</button>
+          </article>
+
+          <article class="language-card reveal" data-language-card data-progress="80" style="--accent-color: #777bb3; --fill-delay: 360ms;">
+            <div class="language-icon"><i class="devicon-php-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>PHP</h3>
+                <span>80%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
+            </div>
+          </article>
+
+          <article class="language-card reveal reveal-delay-1" data-language-card data-progress="75" style="--accent-color: #7f52ff; --fill-delay: 450ms;">
+            <div class="language-icon"><i class="devicon-kotlin-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>Kotlin</h3>
+                <span>75%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
+            </div>
+          </article>
+
+          <article class="language-card reveal" data-language-card data-progress="75" style="--accent-color: #3776ab; --fill-delay: 540ms;">
+            <div class="language-icon"><i class="devicon-python-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>Python</h3>
+                <span>75%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
+            </div>
+          </article>
+
+          <article class="language-card reveal reveal-delay-1" data-language-card data-progress="70" style="--accent-color: #00599c; --fill-delay: 630ms;">
+            <div class="language-icon"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>C++</h3>
+                <span>70%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
+            </div>
+          </article>
+
+          <article class="language-card reveal" data-language-card data-progress="70" style="--accent-color: #f7df1e; --fill-delay: 720ms;">
+            <div class="language-icon language-icon-dark"><i class="devicon-javascript-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>JavaScript</h3>
+                <span>70%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
+            </div>
+          </article>
+
+          <article class="language-card reveal reveal-delay-1" data-language-card data-progress="80" style="--accent-color: #4479a1; --fill-delay: 810ms;">
+            <div class="language-icon"><i class="devicon-microsoftsqlserver-plain colored" aria-hidden="true"></i></div>
+            <div class="language-content">
+              <div class="language-header">
+                <h3>SQL</h3>
+                <span>80%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-bar"></div></div>
+            </div>
           </article>
         </div>
       </div>
@@ -595,29 +664,6 @@
             <a class="button button-primary" id="projectLiveLink" href="#" target="_blank" rel="noopener">Live Demo</a>
             <a class="button button-dark" id="projectCodeLink" href="#" target="_blank" rel="noopener">Source Code</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal" id="certModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
-    <div class="modal-backdrop" data-close-cert></div>
-    <div class="modal-dialog modal-small">
-      <button class="modal-close" data-close-cert aria-label="Close modal">×</button>
-      <div class="modal-header">
-        <span class="modal-kicker">CERTIFICATE DETAILS</span>
-        <h2 id="certModalTitle">Certificate Title</h2>
-      </div>
-      <div class="certificate-detail">
-        <div class="certificate-preview" id="certPreview">CERTIFICATE</div>
-        <div>
-          <h3>Issued By</h3>
-          <p id="certIssuer"></p>
-          <h3>Completed</h3>
-          <p id="certDate"></p>
-          <h3>Skills Validated</h3>
-          <div class="tag-list" id="certSkills"></div>
-          <a class="button button-primary" id="certLink" href="#" target="_blank" rel="noopener">View Credential</a>
         </div>
       </div>
     </div>

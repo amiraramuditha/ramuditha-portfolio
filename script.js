@@ -2,7 +2,7 @@
 
 // =====================================================
 // 1. EASY CONTENT EDITING
-// Change the roles, project information, and certificate data below.
+// Change the roles, project information, and language progress values below.
 // =====================================================
 
 const roles = [
@@ -105,40 +105,7 @@ const projectData = {
   }
 };
 
-const certificateData = {
-  aws: {
-    title: "AWS Academy Graduate – Cloud Foundations",
-    issuer: "Amazon Web Services Academy",
-    date: "Completed in 2026",
-    skills: ["Cloud Concepts", "AWS Services", "Security", "Architecture", "Pricing"],
-    label: "AWS CLOUD",
-    link: "#"
-  },
-  google: {
-    title: "Google UX Design Fundamentals",
-    issuer: "Google Career Certificates",
-    date: "Completed in 2025",
-    skills: ["User Research", "Wireframing", "Prototyping", "Usability Testing"],
-    label: "GOOGLE UX",
-    link: "#"
-  },
-  azure: {
-    title: "Microsoft Azure Fundamentals",
-    issuer: "Microsoft Learn",
-    date: "Completed in 2025",
-    skills: ["Azure Services", "Cloud Security", "Governance", "Cloud Concepts"],
-    label: "AZURE",
-    link: "#"
-  },
-  javascript: {
-    title: "JavaScript Algorithms & Data Structures",
-    issuer: "freeCodeCamp",
-    date: "Completed in 2024",
-    skills: ["JavaScript", "ES6", "Algorithms", "Data Structures", "OOP"],
-    label: "JAVASCRIPT",
-    link: "#"
-  }
-};
+const languageCards = [...document.querySelectorAll("[data-language-card]")];
 
 // =====================================================
 // 2. MOBILE MENU
@@ -254,7 +221,34 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
 // =====================================================
-// 6. PROJECT FILTERS
+// 6. LANGUAGE PROGRESS ANIMATION
+// =====================================================
+
+const languagesSection = document.getElementById("languages");
+
+if (languagesSection && languageCards.length) {
+  const languagesObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        languageCards.forEach((card) => {
+          const progress = Number(card.dataset.progress || 0);
+          card.style.setProperty("--progress-width", `${progress}%`);
+          card.classList.add("is-animated");
+        });
+
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  languagesObserver.observe(languagesSection);
+}
+
+// =====================================================
+// 7. PROJECT FILTERS
 // =====================================================
 
 const filterButtons = document.querySelectorAll(".filter-button");
@@ -274,7 +268,7 @@ filterButtons.forEach((button) => {
 });
 
 // =====================================================
-// 7. PROJECT MODAL
+// 8. PROJECT MODAL
 // =====================================================
 
 const projectModal = document.getElementById("projectModal");
@@ -321,42 +315,9 @@ projectModal.querySelectorAll("[data-close-modal]").forEach((element) => {
   element.addEventListener("click", () => closeModal(projectModal));
 });
 
-// =====================================================
-// 8. CERTIFICATE MODAL
-// =====================================================
-
-const certModal = document.getElementById("certModal");
-const certModalTitle = document.getElementById("certModalTitle");
-const certIssuer = document.getElementById("certIssuer");
-const certDate = document.getElementById("certDate");
-const certSkills = document.getElementById("certSkills");
-const certPreview = document.getElementById("certPreview");
-const certLink = document.getElementById("certLink");
-
-document.querySelectorAll(".open-cert").forEach((button) => {
-  button.addEventListener("click", () => {
-    const data = certificateData[button.dataset.cert];
-    if (!data) return;
-
-    certModalTitle.textContent = data.title;
-    certIssuer.textContent = data.issuer;
-    certDate.textContent = data.date;
-    certPreview.textContent = data.label;
-    certLink.href = data.link;
-    certSkills.innerHTML = data.skills.map((skill) => `<span>${skill}</span>`).join("");
-
-    openModal(certModal);
-  });
-});
-
-certModal.querySelectorAll("[data-close-cert]").forEach((element) => {
-  element.addEventListener("click", () => closeModal(certModal));
-});
-
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal(projectModal);
-    closeModal(certModal);
   }
 });
 
