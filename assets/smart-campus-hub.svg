@@ -1,0 +1,64 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="96" y1="64" x2="1092" y2="736" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B39D6"/>
+      <stop offset="0.52" stop-color="#7B5CFF"/>
+      <stop offset="1" stop-color="#13A091"/>
+    </linearGradient>
+    <linearGradient id="card" x1="196" y1="164" x2="1004" y2="636" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="246" y1="224" x2="954" y2="576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#D6FFF8" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="42" fill="url(#bg)"/>
+  <circle cx="178" cy="166" r="120" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="1058" cy="132" r="150" fill="#FFFFFF" fill-opacity="0.09"/>
+  <circle cx="1008" cy="650" r="170" fill="#FFFFFF" fill-opacity="0.07"/>
+  <rect x="118" y="112" width="964" height="576" rx="34" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <rect x="168" y="164" width="864" height="112" rx="24" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="168" y="304" width="320" height="338" rx="28" fill="#111827" fill-opacity="0.18"/>
+  <rect x="518" y="304" width="514" height="160" rx="28" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="518" y="492" width="514" height="150" rx="28" fill="#111827" fill-opacity="0.16"/>
+  <rect x="214" y="216" width="340" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.85"/>
+  <rect x="214" y="244" width="230" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.55"/>
+  <rect x="548" y="344" width="148" height="16" rx="8" fill="#D6FFF8"/>
+  <rect x="548" y="374" width="250" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.65"/>
+  <rect x="548" y="404" width="198" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.48"/>
+  <rect x="548" y="532" width="178" height="16" rx="8" fill="#D6FFF8"/>
+  <rect x="548" y="562" width="268" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.6"/>
+  <rect x="548" y="592" width="214" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.46"/>
+  <rect x="210" y="340" width="248" height="50" rx="18" fill="#FFFFFF" fill-opacity="0.14"/>
+  <rect x="210" y="410" width="248" height="50" rx="18" fill="#FFFFFF" fill-opacity="0.1"/>
+  <rect x="210" y="480" width="248" height="50" rx="18" fill="#FFFFFF" fill-opacity="0.08"/>
+  <rect x="210" y="550" width="248" height="50" rx="18" fill="#FFFFFF" fill-opacity="0.12"/>
+  <circle cx="258" cy="365" r="14" fill="#D6FFF8"/>
+  <circle cx="258" cy="435" r="14" fill="#D6FFF8"/>
+  <circle cx="258" cy="505" r="14" fill="#D6FFF8"/>
+  <circle cx="258" cy="575" r="14" fill="#D6FFF8"/>
+  <rect x="290" y="356" width="122" height="12" rx="6" fill="url(#accent)"/>
+  <rect x="290" y="426" width="102" height="12" rx="6" fill="url(#accent)"/>
+  <rect x="290" y="496" width="136" height="12" rx="6" fill="url(#accent)"/>
+  <rect x="290" y="566" width="92" height="12" rx="6" fill="url(#accent)"/>
+  <path d="M860 210C860 183.49 881.49 162 908 162H936C962.51 162 984 183.49 984 210V236H860V210Z" fill="#FFFFFF" fill-opacity="0.17"/>
+  <path d="M860 258H984V374C984 400.51 962.51 422 936 422H908C881.49 422 860 400.51 860 374V258Z" fill="#FFFFFF" fill-opacity="0.11"/>
+  <path d="M892 206H952" stroke="#D6FFF8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M892 234H938" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M892 282H958" stroke="#FFFFFF" stroke-opacity="0.68" stroke-width="10" stroke-linecap="round"/>
+  <path d="M892 316H930" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+    <circle cx="892" cy="506" r="78" fill="#FFFFFF" fill-opacity="0.14"/>
+    <circle cx="892" cy="506" r="48" fill="#13A091" fill-opacity="0.92"/>
+  </g>
+  <path d="M876 506L887 517L910 494" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="168" y="700" fill="#FFFFFF" fill-opacity="0.9" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Smart Campus Hub</text>
+  <text x="168" y="738" fill="#FFFFFF" fill-opacity="0.7" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500">Role-based campus management platform</text>
+  <defs>
+    <filter id="shadow" x="774" y="388" width="236" height="236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0A3B35" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+</svg>

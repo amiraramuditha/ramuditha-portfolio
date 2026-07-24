@@ -13,6 +13,36 @@ const roles = [
 ];
 
 const projectData = {
+  smartCampus: {
+    title: "Smart Campus Hub",
+    image: "assets/smart-campus-hub.svg",
+    description:
+      "A smart campus management web application built with Spring Boot, Java, MongoDB, and React.js to manage students, lecturers, notices, events, academic resources, and campus communication.",
+    tags: ["Spring Boot", "Java", "MongoDB", "React.js", "REST API", "Role-Based Auth"],
+    highlights: [
+      "Student and lecturer management in one centralized system",
+      "Notice, event, and academic resource publishing workflows",
+      "Role-based authentication for secure access control",
+      "Responsive frontend pages for desktop and mobile users"
+    ],
+    live: "#",
+    code: "#"
+  },
+  aiMl: {
+    title: "Artificial Intelligence & Machine Learning Project",
+    image: "assets/ai-ml-project.svg",
+    description:
+      "An AI/ML model built with Python, Scikit-learn, and TensorFlow to predict customer behavior using supervised learning techniques, data preprocessing, model training, and evaluation.",
+    tags: ["Python", "Scikit-learn", "TensorFlow", "Decision Trees", "Random Forest", "Accuracy"],
+    highlights: [
+      "Cleaned and preprocessed data before training",
+      "Built and compared Decision Tree and Random Forest models",
+      "Evaluated performance using accuracy and precision",
+      "Focused on supervised learning for customer behavior prediction"
+    ],
+    live: "#",
+    code: "#"
+  },
   ecommerce: {
     title: "E-Commerce Platform",
     image: "assets/project-1.svg",
@@ -29,31 +59,16 @@ const projectData = {
     code: "#"
   },
   hospital: {
-    title: "Hospital Management System",
-    image: "assets/project-2.svg",
+    title: "Hotel Management System",
+    image: "assets/hotel-management-web.svg",
     description:
-      "A role-based hospital management application for handling patients, doctors, appointments, billing, prescriptions, and operational reports through a centralized dashboard.",
-    tags: ["Laravel", "PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "A Spring Boot-based hotel management system with MySQL and Thymeleaf for role-based authentication, room reservations, customer booking management, food ordering, payments, refunds, housekeeping tasks, wallet and card management, finance tracking, and reporting dashboards.",
+    tags: ["Spring Boot", "MySQL", "Thymeleaf", "Java", "REST API"],
     highlights: [
-      "Separate permissions for administrators, doctors, and staff",
-      "Appointment scheduling and patient records",
-      "Payment, report, and status management",
-      "Mobile-friendly dashboard interface"
-    ],
-    live: "#",
-    code: "#"
-  },
-  agency: {
-    title: "Creative Agency Website",
-    image: "assets/project-3.svg",
-    description:
-      "A premium marketing website designed to present services, work, client stories, and contact pathways with polished interactions and visual storytelling.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
-    highlights: [
-      "Modern landing page design",
-      "Smooth scrolling and entrance animations",
-      "Service and portfolio components",
-      "Performance and accessibility improvements"
+      "Role-based authentication for secure staff and customer access",
+      "Room reservation and booking management workflows",
+      "Food ordering, payments, refunds, and wallet or card handling",
+      "Housekeeping, finance tracking, and reporting dashboards"
     ],
     live: "#",
     code: "#"
@@ -69,36 +84,6 @@ const projectData = {
       "Availability and appointment workflows",
       "Notification and payment integration",
       "Administrative booking controls"
-    ],
-    live: "#",
-    code: "#"
-  },
-  travel: {
-    title: "Travel Experience Platform",
-    image: "assets/project-5.svg",
-    description:
-      "A tourism platform for promoting destinations and experiences while managing packages, ticket options, reservations, customers, and travel content.",
-    tags: ["Next.js", "Laravel", "MySQL", "API", "Cloud"],
-    highlights: [
-      "Destination and activity discovery",
-      "Package and ticket management",
-      "Reservation and customer workflows",
-      "SEO-friendly content pages"
-    ],
-    live: "#",
-    code: "#"
-  },
-  dashboard: {
-    title: "Business Analytics Dashboard",
-    image: "assets/project-6.svg",
-    description:
-      "A clean, responsive dashboard that presents operational metrics, charts, recent activity, alerts, and exportable reports for business decision-making.",
-    tags: ["Figma", "React", "Chart.js", "REST API", "UX"],
-    highlights: [
-      "Reusable card and table components",
-      "Interactive chart and filtering controls",
-      "Responsive desktop and mobile layouts",
-      "Clear information hierarchy for fast decisions"
     ],
     live: "#",
     code: "#"

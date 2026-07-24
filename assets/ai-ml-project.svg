@@ -1,0 +1,64 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="94" y1="72" x2="1106" y2="728" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16122D"/>
+      <stop offset="0.52" stop-color="#2E2460"/>
+      <stop offset="1" stop-color="#0F7F77"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="160" y1="126" x2="1040" y2="674" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A18"/>
+      <stop offset="1" stop-color="#12172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="248" y1="188" x2="952" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="0.54" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="190" cy="176" r="128" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="1036" cy="138" r="156" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="1006" cy="648" r="176" fill="#FFFFFF" fill-opacity="0.06"/>
+  <rect x="106" y="92" width="988" height="616" rx="38" fill="url(#panel)" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <rect x="146" y="130" width="908" height="86" rx="24" fill="#FFFFFF" fill-opacity="0.06"/>
+  <rect x="176" y="156" width="212" height="18" rx="9" fill="url(#accent)"/>
+  <rect x="176" y="182" width="132" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.36"/>
+  <rect x="760" y="152" width="246" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.08"/>
+  <rect x="778" y="160" width="82" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.56"/>
+  <rect x="872" y="160" width="112" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.28"/>
+  <rect x="146" y="238" width="338" height="388" rx="28" fill="#0A0A18" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="516" y="238" width="224" height="388" rx="28" fill="#0A0A18" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="760" y="238" width="290" height="388" rx="28" fill="#0A0A18" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="182" y="274" width="220" height="16" rx="8" fill="#FFFFFF" fill-opacity="0.76"/>
+  <rect x="182" y="304" width="164" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.34"/>
+  <rect x="182" y="350" width="274" height="36" rx="18" fill="#1D243C"/>
+  <rect x="182" y="398" width="274" height="36" rx="18" fill="#1D243C"/>
+  <rect x="182" y="446" width="274" height="36" rx="18" fill="#1D243C"/>
+  <rect x="182" y="494" width="274" height="36" rx="18" fill="#1D243C"/>
+  <rect x="182" y="542" width="180" height="36" rx="18" fill="#1D243C"/>
+  <rect x="548" y="280" width="132" height="16" rx="8" fill="#34D399"/>
+  <rect x="548" y="314" width="166" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.38"/>
+  <rect x="548" y="350" width="118" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.26"/>
+  <rect x="548" y="392" width="112" height="84" rx="18" fill="#111827"/>
+  <rect x="548" y="392" width="112" height="84" rx="18" fill="none" stroke="#60A5FA" stroke-opacity="0.48"/>
+  <path d="M560 450L578 430L592 442L622 408L642 420" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="560" cy="450" r="5" fill="#60A5FA"/>
+  <circle cx="578" cy="430" r="5" fill="#A855F7"/>
+  <circle cx="592" cy="442" r="5" fill="#34D399"/>
+  <circle cx="622" cy="408" r="5" fill="#60A5FA"/>
+  <circle cx="642" cy="420" r="5" fill="#A855F7"/>
+  <rect x="548" y="506" width="166" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.4"/>
+  <rect x="548" y="532" width="138" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.3"/>
+  <rect x="548" y="558" width="120" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.22"/>
+  <rect x="788" y="282" width="188" height="16" rx="8" fill="#A855F7"/>
+  <rect x="788" y="316" width="150" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.38"/>
+  <rect x="788" y="350" width="142" height="112" rx="20" fill="#111827"/>
+  <rect x="788" y="350" width="142" height="112" rx="20" fill="none" stroke="#34D399" stroke-opacity="0.42"/>
+  <path d="M802 436H918" stroke="#34D399" stroke-width="6" stroke-linecap="round"/>
+  <path d="M802 418C820 398 834 388 854 388C880 388 894 406 918 368" stroke="#60A5FA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="788" y="494" width="178" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.4"/>
+  <rect x="788" y="520" width="134" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.3"/>
+  <rect x="788" y="546" width="156" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.22"/>
+  <text x="146" y="688" fill="#FFFFFF" fill-opacity="0.9" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Artificial Intelligence &amp; Machine Learning Project</text>
+  <text x="146" y="720" fill="#FFFFFF" fill-opacity="0.66" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500">Customer behavior prediction and model evaluation</text>
+</svg>
