@@ -75,7 +75,7 @@ const projectData = {
   },
   booking: {
     title: "Appointment Booking App",
-    image: "assets/project-4.svg",
+    image: "assets/project-5.png",
     description:
       "A scheduling platform that lets users discover service providers, select time slots, manage bookings, receive notifications, and complete online payments.",
     tags: ["MongoDB", "Express", "React", "Node.js", "Firebase"],
@@ -269,6 +269,7 @@ function openModal(modal) {
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+  modal.querySelector(".modal-close").focus();
 }
 
 function closeModal(modal) {
@@ -286,8 +287,10 @@ document.querySelectorAll(".open-project").forEach((button) => {
     projectModalImage.src = data.image;
     projectModalImage.alt = `${data.title} preview`;
     projectModalDescription.textContent = data.description;
-    projectLiveLink.href = data.live;
-    projectCodeLink.href = data.code;
+    projectLiveLink.hidden = !data.live || data.live === "#";
+    projectCodeLink.hidden = !data.code || data.code === "#";
+    projectLiveLink.href = data.live || "#";
+    projectCodeLink.href = data.code || "#";
 
     projectModalTags.innerHTML = data.tags.map((tag) => `<span>${tag}</span>`).join("");
     projectModalHighlights.innerHTML = data.highlights.map((item) => `<li>${item}</li>`).join("");
@@ -307,29 +310,23 @@ window.addEventListener("keydown", (event) => {
 });
 
 // =====================================================
-// 9. CONTACT & SUBSCRIBE DEMO FORMS
+// 9. CONTACT FORM
 // =====================================================
 
 const contactForm = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");
-const subscribeForm = document.getElementById("subscribeForm");
-
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(contactForm);
   const name = formData.get("name");
+  const email = formData.get("email");
+  const subject = formData.get("subject");
+  const message = formData.get("message");
+  const body = `Hello Amira,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`;
 
-  formNote.textContent = `Thank you, ${name}. Your demo message has been captured. Connect this form to your email service before publishing.`;
+  formNote.textContent = `Thanks, ${name}. Your email app is opening with the message ready to send.`;
   formNote.classList.add("success");
-  contactForm.reset();
-});
-
-subscribeForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const button = subscribeForm.querySelector("button");
-  button.textContent = "Added!";
-  subscribeForm.reset();
-  setTimeout(() => (button.textContent = "Subscribe"), 1800);
+  window.location.href = `mailto:amiraramuditha345@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 // =====================================================
